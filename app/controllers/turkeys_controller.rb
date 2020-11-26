@@ -1,0 +1,2 @@
+class TurkeysController < ApplicationController
+end
