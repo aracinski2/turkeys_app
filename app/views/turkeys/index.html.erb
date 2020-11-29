@@ -1,4 +1,8 @@
 <%= "Here are all the Turkeys"%>
 
-<p><%= @turkeys[0].name%></p>
-<p><%= @turkeys[0].gobbles%></p>
+<% @turkeys.each do |turkey|%>
+  <h1><p>Name: <%= turkey.name%></p></h1>
+  <p>Weight: <%= turkey.weight%></p>
+  <p>Size: <%= turkey.size%></p>
+  <p>Gobbles: <%= turkey.gobbles%></p>
+<% end %>
